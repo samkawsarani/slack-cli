@@ -16,7 +16,7 @@ Read-only Slack API client with CLI. Built for use by LLM agents and humans.
 ```bash
 npm install -g @samkawsarani/slack-cli
 # or
-bun add -g @samkawsarani/slack-cli
+bun install -g @samkawsarani/slack-cli
 ```
 
 ## Quick Start
