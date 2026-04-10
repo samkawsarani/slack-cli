@@ -4,6 +4,9 @@ node_modules/
 # Build output
 dist/
 
+# npm pack (local testing)
+*.tgz
+
 # Environment
 .env
 .env.local

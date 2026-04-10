@@ -14,7 +14,13 @@ bun x tsc -p tsconfig.build.json
 echo "Bundling CLI to dist/slack.js …"
 bun build src/cli.ts --outfile dist/slack.js --target node
 
-# Prepend Node.js shebang so the file is directly executable
+# Bun may inject its own shebang; strip it so we don't end up with two (Node ESM only strips the first line).
+if [[ "$(head -c2 dist/slack.js 2>/dev/null)" == '#!' ]]; then
+  tail -n +2 dist/slack.js > dist/slack.body
+  mv dist/slack.body dist/slack.js
+fi
+
+# Single shebang for direct execution
 printf '#!/usr/bin/env node\n' | cat - dist/slack.js > dist/slack.tmp
 mv dist/slack.tmp dist/slack.js
 chmod +x dist/slack.js
