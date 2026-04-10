@@ -1,6 +1,6 @@
 {
   "name": "@samkawsarani/slack-cli",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Slack API integration — messages, channels, users, and threads with CLI",
   "license": "LicenseRef-CC-BY-NC-SA-4.0",
   "homepage": "https://github.com/samkawsarani/slack-cli#readme",

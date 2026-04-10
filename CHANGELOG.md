@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-04-10
+
 - Add `install-skill` command: writes `skills/slack/SKILL.md` to `.agents/skills/slack/` (or `~/.agents/skills/slack/` with `--global`) and optionally symlinks `.claude/skills/slack/`.
 
 ## [1.0.1] - 2026-04-10
