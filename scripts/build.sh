@@ -8,6 +8,9 @@ cd "$ROOT"
 rm -rf dist
 mkdir -p dist
 
+mkdir -p dist/skills/slack
+cp skills/slack/SKILL.md dist/skills/slack/SKILL.md
+
 echo "Compiling library to dist/lib …"
 bun x tsc -p tsconfig.build.json
 

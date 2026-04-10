@@ -42,3 +42,4 @@ export type {
   SlackMessageLink,
   ChannelSummary,
 } from "./slack.js";
+export { readPackagedSkillMarkdown } from "./skill-path.js";
